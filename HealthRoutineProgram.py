@@ -2,6 +2,10 @@ import numpy as np
 import os
 import datetime
 import time
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(script_dir)
+
 #운동부위 두가지 선택
 part1, part2 = input('오늘 운동하실 두가지 부위를 입력해주세요: ').split(',')
 if part1 == part2:
